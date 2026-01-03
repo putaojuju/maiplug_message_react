@@ -114,7 +114,9 @@ class MessageReactAction(BaseAction):
             logger.error(f"LLM调用失败: {chosen_react_emoji_json_str}")
             return False, f"LLM调用失败: {chosen_react_emoji_json_str}"
         selected_message_id = json_resp["message_id"]
-        chosen_react_emoji_id = json_resp["emoji_id"].strip().replace('"', "").replace("'", "")
+        emoji_id_raw = json_resp["emoji_id"]
+        emoji_id_str = str(emoji_id_raw)
+        chosen_react_emoji_id = emoji_id_str.strip().replace('"', "").replace("'", "")
         chosen_react_emoji_name = available_react_emojis.get(int(chosen_react_emoji_id))
         logger.debug(f"LLM响应解析: {selected_message_id}, {chosen_react_emoji_id}: {chosen_react_emoji_name}")
         await self.send_msg_react(chat_id, selected_message_id, chosen_react_emoji_id,
