@@ -14,7 +14,7 @@
 <img width="832" height="427" alt="插件使用效果" src="https://github.com/user-attachments/assets/e0a68cd3-718b-464b-b9e8-e7c1926421c3" />
 
 ## 📋 前置条件
-1. 麦麦机器人已完成部署并正常运行，可响应群聊消息
+1. 麦麦已完成部署并正常运行，可响应群聊消息
 2. Napcat 组件已安装且处于启动状态
 3. 麦麦配置文件 `model_config.toml` 中，`model_task_config.tool_use` 项已配置完成，确保模型具备工具调用能力
 
