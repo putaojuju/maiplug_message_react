@@ -36,6 +36,25 @@
 ### 步骤4：完善插件配置文件
 使用文本编辑器打开自动生成的 `config.toml`，按下方说明补充配置项：
 
+```toml
+# maiplug_message_react - 自动生成的配置文件
+# 通过 Napcat API 赋予麦麦对消息贴表情的能力
+
+# 插件基本信息（无需修改）
+[plugin]
+name = "maiplug_message_react"
+version = "1.0.1"  # 对应版本更新后的版本号
+enabled = true     # true=启用插件，false=禁用插件
+
+[napcat]
+# Napcat服务地址：本地部署填 127.0.0.1；Docker部署填 napcat
+host = "127.0.0.1"
+
+# Napcat服务端口：填写步骤3中设置的自定义端口
+port = "填写步骤3中设置的自定义端口"
+
+# Napcat服务认证Token：从Napcat控制台获取
+token = "步骤3 的Napcat访问Token"
    # maiplug_message_react - 自动生成的配置文件
    # 通过 Napcat API 赋予麦麦对消息贴表情的能力
 
@@ -54,7 +73,7 @@
 
    # Napcat服务认证Token：从Napcat控制台获取
    token = "步骤3 的Napcat访问Token"
-
+```
 #### 🔍 如何获取 Napcat Token
 1. 回到 Napcat WebUI 控制台
 2. 进入**设置 → 安全设置**（或**Token管理**）页面
