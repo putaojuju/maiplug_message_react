@@ -74,10 +74,6 @@ token = "步骤3 的Napcat访问Token"
    # Napcat服务认证Token：从Napcat控制台获取
    token = "步骤3 的Napcat访问Token"
 ```
-#### 🔍 如何获取 Napcat Token
-1. 回到 Napcat WebUI 控制台
-2. 进入**设置 → 安全设置**（或**Token管理**）页面
-3. 复制系统生成的**访问Token**，粘贴到配置文件的 `token` 项中（注意保留引号）
 
 ### 步骤5：启动插件
 保存配置文件后，再次重启麦麦主程序，插件即可正式生效
